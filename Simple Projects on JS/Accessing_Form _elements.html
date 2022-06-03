@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing forms with JS</title>
+    <script>
+      function checkData() {
+        var massage = "";
+        var tname = document.getElementById("tfname").value;
+        var temail = document.getElementById("tfemail").value;
+        var tage = document.getElementById("tfage").value;
+        // radio butons
+        var rdmale = document.getElementById("male").checked;
+        var rdfemale = document.getElementById("female").checked;
+        // printing them
+        massage += "Name" + tfname + "<br>";
+        massage += "Email" + tfemail + "<br>";
+        massage += "Age" + tfage + "<br>";
+        massage += "Male" + male + "<br>";
+        massage += "Female" + female + "<br>";
+
+        document.getElementById("tmassage").innerHTML = massage;
+      }
+    </script>
+  </head>
+  <body>
+    <p id="tmassage"></p>
+    <form>
+      Your name: <input type="text" name="tname" id="tfname" /><br /><br />
+      Your Email:<input type="email" name="temail" id="tfemail" /><br /><br />
+      Your age: <input type="text" name="tage" id="tfage" /><br /><br />
+      <input type="radio" name="gender" id="male" />Male  &nbsp;
+       Female<input type="radio"name="gender" id="female"/> <br />
+      <input
+        type="button"
+        name="submit"
+        value="Submit"
+        onclick="checkData();"
+      />
+    </form>
+  </body>
+</html>
