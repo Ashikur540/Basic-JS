@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      alert("          WELCOME        to my     সাদামাটা কেলকুলেটরে 😎");
+      alert("          কিছু করা লাগবি না !! জাস্ট ২ টা নাম্বার দিবা আর চিহ্ন দিবা কাম হয়ে যাবি 😁");
+
+      let n1, n2,sum,mul,div,sub;
+      n1 = prompt("Enter number ১:\n");
+      n2 = prompt("Enter number2:\n");
+      let operator = prompt("Enter operator(+ , _- ,* ,/ ):\n");
+
+      // conversation to integer cx prompt takes as strings .
+      n1 = parseInt(n1, 10);
+      n2 = parseInt(n2, 10);
+      // functions
+      function addition(n1,n2) {
+        return n1 + n2;
+      }
+      function subtraction(n1,n2) {
+        return n1 - n2;
+      }
+      function multiplication(n1,n2) {
+        return n1 * n2;
+      }
+      function divition(n1,n2) {
+        return n1 / n2;
+      }
+
+      switch (operator) {
+        case  '+':
+          document.write("যোগফল ="+(addition(n1,n2))+"<br>"); 
+          document.writeln("👌👌CONGRATULATIONS 👌👌!!!  ধন্যবাদ বলা লাগবি না  একদিন বিরিয়ানি ট্রিট  দিস 😋😁😂");
+          break;
+        case  '-':
+        document.write("বিয়োগফল ="+(subtraction(n1,n2))+"<br>"); 
+        document.writeln("👌👌CONGRATULATIONS 👌👌!!!  ধন্যবাদ বলা লাগবি না  একদিন বিরিয়ানি ট্রিট  দিস 😋😁😂");
+          break;
+        case  '*':
+        document.write("গু💩নফল ="+(multiplication(n1,n2))+"<br>"); 
+        document.writeln("👌👌CONGRATULATIONS 👌👌!!! ধন্যবাদ ববলা লাগবি না  একদিন বিরিয়ানিট্রিট ই দিস 😋😁😂");
+          break;
+        case  '/':
+        document.write("ভাগফল ="+(divition(n1,n2))+"<br>"); 
+        document.writeln("👌👌CONGRATULATIONS 👌👌!!! ধন্যবাদ ববলা লাগবি না  একদিন বিরিয়ানিট্রিট ই দিস 😋😁😂");
+          break;
+
+        default:
+          document.write("Invalid operator");
+          document.write("আরে বকচয় চিহ্ন ভুল দিসছ ঠিক টা দেহ !! হালা 👀");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
